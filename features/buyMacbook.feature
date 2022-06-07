@@ -9,3 +9,4 @@ Scenario: As a user, I can buy a macbook Pro
     When Appears Alert message and click Aceptar
     When Click in Cart
     Then Appears a total price of 1,100.00
+    Then Complete the form and click In Purchase
