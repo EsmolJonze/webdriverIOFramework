@@ -7,8 +7,6 @@ const formCard = $("#card");
 const formMonth = $("#month");
 const formYear = $("#year");
 
-
-
 //  Scenario: As a user, I can buy a macbook Pro
 
 Given(/^I am in Home Page Loged$/, async () => {
@@ -50,5 +48,6 @@ Then(/^Complete the form and click In Purchase$/, async () => {
   await formMonth.setValue("June");
   await formYear.setValue("2022");
   await $("button=Purchase").click();
+  await $("button=OK").click();
 
 });
