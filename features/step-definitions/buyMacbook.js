@@ -20,7 +20,6 @@ When(/^Click In  Laptops and click in Macbook Pro$/, async () => {
 
 When(/^Add to cart$/, async () => {
   await $("a=Add to cart").click();
-  await browser.saveScreenshot('screenshot.png');
 });
 
 Then(/^Appears Alert message and click Aceptar$/, async () => {
