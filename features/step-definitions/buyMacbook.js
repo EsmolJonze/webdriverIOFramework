@@ -49,5 +49,4 @@ Then(/^Complete the form and click In Purchase$/, async () => {
   await formYear.setValue("2022");
   await $("button=Purchase").click();
   await $("button=OK").click();
-
 });

@@ -1,4 +1,10 @@
 const { Given, When, Then } = require("@wdio/cucumber-framework");
+const userName = $("#nameofuser");
+const loginLink = $("#login2");
+const loginModal = $('#logInModal');
+const usernameInput = $("#loginusername");
+const passwordInput = $("#loginpassword");
+
 
 // Scenario: As a user, I can log into the secure area
 
@@ -7,10 +13,6 @@ Given(/^I am on webpage$/, async () => {
 });
 
 When(/^Click In Log in and enter <Patri> and <3384>$/, async () => {
-  const loginLink = $("#login2");
-  const loginModal = $('#logInModal');
-  const usernameInput = $("#loginusername");
-  const passwordInput = $("#loginpassword");
   await loginLink.click();
   await loginModal.waitForDisplayed();
   await usernameInput.setValue("Patri");
@@ -22,7 +24,6 @@ When(/^I click in Log In button$/, async () => {
 });
 
 Then(/^Appears a message <Welcome Patri>$/, async () => {
-  const userName = $("#nameofuser");
 
   await expect(userName).toHaveText("Welcome Patri");
 });
