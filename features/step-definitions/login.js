@@ -1,5 +1,7 @@
 const { Given, When, Then } = require("@wdio/cucumber-framework");
 
+// Scenario: As a user, I can log into the secure area
+
 Given(/^I am on webpage$/, async () => {
   await browser.url("https://www.demoblaze.com/index.html");
 });
