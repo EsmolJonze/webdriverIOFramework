@@ -21,7 +21,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './features/**/login.feature',
+        './features/**/buyMacbook.feature'
     ],
     // Patterns to exclude.
     exclude: [
