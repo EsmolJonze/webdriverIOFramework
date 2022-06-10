@@ -49,3 +49,4 @@ Then(/^Complete the form and click In Purchase$/, async () => {
   await $("button=Purchase").click();
   await $("button=OK").click();
 });
+
